@@ -1,0 +1,20 @@
+server:
+  port: 8880
+security:
+  basic:
+    enabled: true
+  user:
+    name: root
+    password: root
+eureka:
+  server:
+    enable-self-preservation: false
+    enableSelfPreservation: false
+  instance:
+    hostname: localhost,
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8880/eureka/

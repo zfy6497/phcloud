@@ -1,0 +1,6 @@
+server:
+  port: ${paascloud.server.provider.uac.port:8881}
+
+spring:
+  application:
+    name: service-hi
